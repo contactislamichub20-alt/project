@@ -1,0 +1,311 @@
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; color: #333; background: #fff; line-height: 1.6; }
+
+        /* Header - Same as Home Page */
+     header {
+            background: #000;
+            color: white;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .top-bar {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            font-size: 0.9em;
+        }
+        .contact-info span { margin-right: 20px; }
+        .social-icons a { color: white; margin-left: 15px; font-size: 1.2em; }
+
+        .navbar {
+            background: #F4DEC2;
+            padding: 15px 0;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo img { height: 60px; }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 0;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+                        background: #faf9f8;
+
+            min-width: 200px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            top: 100%;
+            left: 0;
+        }
+        .dropdown:hover .dropdown-content { display: block; }
+        .dropdown-content a {
+            display: block;
+            padding: 12px 20px;
+            color: #333;
+        }
+        .join-btn {
+            background: #000;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-left: 13%;
+        }
+
+
+        /* Hero Banner */
+        .contact-hero {
+              background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/tasbe.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 160px 20px;
+        }
+        .contact-hero h1 {
+            font-size: 5em;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        .breadcrumb {
+            font-size: 1.1em;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://c8.alamy.com/comp/2C42W2T/islamic-concept-the-holy-quran-and-tasbih-rosary-beads-on-dark-background-2C42W2T.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+        }
+        .contact-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 100px;
+        }
+        .contact-left {
+            flex: 1;
+        }
+        .contact-left h2 {
+            font-size: 3.5em;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+        .contact-left p {
+            font-size: 1.2em;
+            margin-bottom: 60px;
+            opacity: 0.9;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+        .contact-item i {
+            font-size: 2.5em;
+            background: rgba(255,255,255,0.1);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact-item div strong {
+            font-size: 1.3em;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        /* Form */
+        .contact-form {
+            flex: 1;
+            background: white;
+            color: #333;
+            padding: 60px;
+            border-radius: 20px;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.4);
+        }
+        .contact-form h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #065f46;
+            text-align: center;
+        }
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-bottom: 25px;
+        }
+        .form-full {
+            grid-column: 1 / -1;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 18px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-size: 1.1em;
+        }
+        .contact-form textarea {
+            height: 180px;
+            resize: vertical;
+        }
+        .submit-btn {
+            width: 100%;
+            background: #000;
+            color: white;
+            padding: 20px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.3em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .submit-btn:hover {
+            background: #065f46;
+        }
+
+          /* Footer */
+.footer {
+    background: #111;
+    color: #aaa;
+    padding: 80px 20px 40px;
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
+    margin-bottom: 50px;
+}
+
+.footer-column h4 {
+    color: white;
+    font-size: 1.3em;
+    margin-bottom: 25px;
+}
+
+.footer-column p, .footer-column ul li {
+    margin-bottom: 12px;
+    font-size: 1em;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column a {
+    color: #aaa;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    color: #10b981;
+}
+
+.social-links a {
+    font-size: 1.5em;
+    margin-right: 15px;
+    color: #aaa;
+}
+
+.social-links a:hover {
+    color: #10b981;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-images img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 1px; */
+}
+
+.payment-icons img {
+    height: 30px;
+    margin: 0 10px;
+}
+
+.footer-bottom p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .feature-card {
+        padding: 40px 25px;
+    }
+    .icon-box {
+        width: 100px;
+        height: 100px;
+    }
+    .icon-box img {
+        width: 60px;
+        height: 60px;
+    }
+    .feature-card h3 {
+        font-size: 1.3em;
+    }
+}
